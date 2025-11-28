@@ -101,7 +101,6 @@ public class FakeOrderPaymentOverride : AutoFakerOverride<OrderPayment>
     /// new AutoFaker<OrderPayment>(_config)
     ///     .Ignore(op => op.Id)
     ///     .Ignore(op => op.OrderId)
-    ///     .Ignore(op => op.Id)
     ///     .RuleFor(op => op.Order, FakeFactory.CreateFakeOrder())
     ///     .Generate()
     public override void Generate(AutoFakerOverrideContext context)
